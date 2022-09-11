@@ -5,4 +5,11 @@ d8cards03_config_forms.hello:
     _title: 'Our first route'
   requirements:
     _permission: 'access content'
+d8cards03_config_forms.greeting_form:
+  path: '/admin/config/salutation-configuration'
+  defaults:
+    _form: Drupal\d8cards03_config_forms\Form\SalutationConfigurationForm
+    _title: 'Salutation configuration'
+  requirements:
+    _permission: 'administer site configuration'
 
