@@ -1,0 +1,5 @@
+name: D8Cards03 Config Forms
+description: Module for config forms to satisfy d8cards lesson 3
+type: module
+core_version_requirement: ^9
+package: Custom

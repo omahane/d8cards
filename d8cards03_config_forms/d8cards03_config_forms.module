@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * D8Cards03 Config Forms module file.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+/**
+ * Implements hook_help().
+ */
+function d8cards03_config_forms_help($route_name, RouteMatchInterface $route_match) {
+    switch ($route_name) {
+        case 'help.page.d8cards03_config_forms':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('This is an example module.'). '</p>';
+            return $output;
+            default:
+    }
+}

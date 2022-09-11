@@ -1,0 +1,8 @@
+d8cards03_config_forms.hello:
+  path: '/hello'
+  defaults:
+    _controller: Drupal\d8cards03_config_forms\Controller\D8Cards03ConfigFormsController::helloWorld
+    _title: 'Our first route'
+  requirements:
+    _permission: 'access content'
+
