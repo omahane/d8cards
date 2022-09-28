@@ -1,4 +1,9 @@
 services:
   d8cards03_config_forms.salutation:
     class: Drupal\d8cards03_config_forms\D8Cards03ConfigFormsSalutation
-    arguments: ['@config.factory']
+    arguments: ['@config.factory', '@event_dispatcher']
+  d8cards03_config_forms.redirect_subscriber:
+    class: \Drupal\d8cards03_config_forms\EventSubscriber\D8Cards03ConfigFormsRedirectSubscriber
+    arguments: ['@current_user', '@current_route_match']
+    tags:
+      - { name: event_subscriber }
